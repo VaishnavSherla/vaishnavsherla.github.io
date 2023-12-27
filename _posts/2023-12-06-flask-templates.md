@@ -3,7 +3,7 @@ title: Flask Templates
 date: 2023-12-06 00:00:00 +0000
 categories: [Flask]
 tags: [flask]
-
+description: Learn about Flask templates with Vaishnav Sherla. Explore the basics of using templates in Flask for web development.
 ---
 ## Understanding Flask Templates
 Flask is built on top of Jinja2, which is a popular template engine for Python. While it's possible to return HTML code directly from the view function, as we saw in our previous blog post about Flask basics, it's not a good practice to mix presentation logic with application logic. This is where templates come in handy.
