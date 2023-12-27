@@ -2,6 +2,7 @@
 # the default layout is 'page'
 icon: fas fa-info-circle
 order: 4
+description: Meet Vaishnav, a Computer Science enthusiast skilled in Python, JavaScript, Flask, Django, and React. Passionate about web scraping, ethical hacking, and continual learning. Connect on LinkedIn.
 ---
 
 # Greetings!
