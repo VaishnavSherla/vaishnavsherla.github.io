@@ -3,9 +3,11 @@ title: Flask Basics
 date: 2023-12-05 00:00:00 +0000
 categories: [Flask]
 tags: [flask]
-author: Vaishnav Sherla
 description: Welcome to the introduction to Flask basics by Vaishnav Sherla, covering key concepts like setup, creating a Flask application, and working with dynamic routes. Get started with Flask for web development!
 pin: true
+image:
+  path: /assets/img/posts/flask.png
+  alt: Flask - A Python Web Framework.
 ---
 
 ## What is Flask?
