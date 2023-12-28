@@ -22,6 +22,3 @@ projects:
     about: "<b>DuckDuckGo Scraper</b> - A Simple Script To Scrape DuckDuckGo Search Results Using Python And Selenium WebDriver. Which Scrapes and Saves Result To a Text File.<br>&nbsp;&nbsp;&nbsp;Currently with <em>6 stars</em> and <em>3 forks</em> on GitHub.<br><br>"
     tags: [Python, Web-Scraping, Selenium]
     code: https://github.com/JohnScooby/DuckDuckGo-Scraper
-  
-  
-  

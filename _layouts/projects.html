@@ -9,8 +9,8 @@ description: List of Projects developed by Vaishnav Sherla.
 {% include lang.html %}
 
 <div id="project-card">
-    {% assign project_counter = 1 %}
-  
+  {% assign project_counter = 1 %}
+
   {% for project in site.data.projects_data.projects %}
   <div class="project">
     <div>
@@ -24,11 +24,10 @@ description: List of Projects developed by Vaishnav Sherla.
 
       <small>&nbsp;&nbsp;&nbsp;{{project.about}}</small>
 
-      {% if project.image %} {% capture src %}src="{{ project.image.path |
-      default: project.image }}"{% endcapture %} {% capture class
-      %}class="thumbnail preview-img{% if project.image.no_bg %}{{ ' no-bg' }}{%
-      endif %}"{% endcapture %} {% capture alt %}alt="{{ project.image.alt |
-      xml_escape | default: "Project Image" }}"{% endcapture %}
+      {% if project.image %}
+      {% capture src %}src="{{ project.image.path | default: project.image }}"{% endcapture %}
+      {% capture class %}class="thumbnail preview-img{% if project.image.no_bg %}{{ ' no-bg' }}{% endif %}"{% endcapture %}
+      {% capture alt %}alt="{{ project.image.alt | xml_escape | default: "Project Image" }}"{% endcapture %}
         
       <div class="mt-3 mb-3">
         <img {{ src }} {{ class }} {{ alt }} loading="lazy" />
@@ -42,24 +41,22 @@ description: List of Projects developed by Vaishnav Sherla.
 
       <div class="links">
         {% if project.code %}
-            <a target="_blank" href="{{project.code}}" class="btn btn-success"
-            >Github</a
-            >
+        <a target="_blank" href="{{project.code}}" class="btn btn-success">Github</a>
         {% else %}
-            <a href="#" class="btn btn-secondary disabled">Github</a>
-        {% endif %} {% if project.link %}
-            <a target="_blank" href="{{project.link}}" class="btn btn-success"
-            >Live Demo</a
-            >
+        <a href="#" class="btn btn-secondary disabled">Github</a>
+        {% endif %}
+        
+        {% if project.link %}
+        <a target="_blank" href="{{project.link}}" class="btn btn-success">Live Demo</a>
         {% else %}
-            <a href="#" class="btn btn-secondary disabled">Live Demo</a>
+        <a href="#" class="btn btn-secondary disabled">Live Demo</a>
         {% endif %}
       </div>
     </div>
     <div>
-        {% assign project_counter = project_counter | plus: 1 %}
+      {% assign project_counter = project_counter | plus: 1 %}
       <hr />
-      {% endfor %}
     </div>
   </div>
+  {% endfor %}
 </div>
