@@ -1,0 +1,27 @@
+projects:
+  - title: Google Scraper
+    about: "<b>Google Scraper</b> - A Simple Python Based Google Search Results Scraper. Which Scrapes and Saves Result To a Text File.<br>&nbsp;&nbsp;&nbsp;Currently with <em>18 stars</em> and <em>9 forks</em> on GitHub.<br><br>"
+    tags: [Python, Web-Scraping]
+    code: https://github.com/JohnScooby/Google-Scraper
+  
+  - title: Contact Book
+    about: <b>Contact Book</b> Application Built With <b>Django</b><br>&nbsp;&nbsp;&nbsp;
+           <b>Features include</b>
+            <ul>
+              <li><em>Authentication</em></li>
+              <li><em>Robust Filtering</em></li>
+              <li><em>Categorization</em></li>
+              <li><em>Import/Export Capabilities</em></li>
+            </ul>
+    tags: [Django, Python, Bootstrap4]
+    code: https://github.com/VaishnavSherla/Contacts-App
+    image:
+      path: /assets/img/projects/contactBook.png
+  
+  - title: DuckDuckGo Scraper
+    about: "<b>DuckDuckGo Scraper</b> - A Simple Script To Scrape DuckDuckGo Search Results Using Python And Selenium WebDriver. Which Scrapes and Saves Result To a Text File.<br>&nbsp;&nbsp;&nbsp;Currently with <em>6 stars</em> and <em>3 forks</em> on GitHub.<br><br>"
+    tags: [Python, Web-Scraping, Selenium]
+    code: https://github.com/JohnScooby/DuckDuckGo-Scraper
+  
+  
+  
