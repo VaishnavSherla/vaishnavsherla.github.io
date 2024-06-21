@@ -1,0 +1,147 @@
+#-------------------------------
+# General Site Settings
+title: Vaishnav Sherla
+logo: 
+description: Meet Vaishnav, a Computer Science enthusiast skilled in Python, JavaScript, Golang, Flask, Django, and NodeJs. Passionate about backend engineering, concurrency, and computer science internals.
+domain: vaishnavsherla.github.io
+url: https://vaishnavsherla.github.io
+baseurl: ""
+
+#-------------------------------
+# Author Settings
+author:
+  name: Vaishnav Sherla
+  avatar: '/images/avatar.jpg'
+
+
+#-------------------------------
+# Hero Settings
+hero:
+  title: Vaishnav Sherla
+  description: Software Engineer, Passionate about Backend Engineering and Computer Science internals!
+  image: '/images/header/home.jpg'
+
+
+#-------------------------------
+# Contact Settings
+contact:
+  email: xrgnvgyb # Formspree (https://formspree.io/) form id
+  description: Any questions about anything I've been working on? Do you have a project that you think I might like and could possibly be involved in? Let me know!
+
+
+#-------------------------------
+# Footer section
+# Icons overview https://ionicons.com/v4/
+social:
+- {icon: "ion-logo-linkedin", link: "https://www.linkedin.com/in/vaishnavsherla/"}
+- {icon: "ion-logo-github", link: "https://github.com/vaishnavsherla"}
+
+
+#-------------------------------
+# Comment Section (Disqus)
+disqus-identifier: JohnScooby
+
+#-------------------------------
+# Google Analytics
+google-analytics: 
+
+
+#-------------------------------
+# Newsletter
+mailchimp: # To enable the mailchimp form, use value 'enable'
+mailchimp-identifier:
+
+#-------------------------------
+# Build settings
+markdown: kramdown
+permalink: pretty
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll/tagging
+  - jekyll-feed
+
+kramdown:
+  parse_block_html: true
+
+paginate: 8
+paginate_path: "/page/:num"
+
+# Pages Path
+defaults:
+  - scope:
+      path: '_pages'
+    values:
+      permalink: /:basename:output_ext
+
+include:
+  - _pages
+
+# Tags
+tag_page_dir:         tag
+tag_page_layout:      tag_page
+tag_permalink_style:  pretty
+
+sass:
+  sass_dir: _sass
+  style: compressed
+
+# Projects Config
+projects:
+  - name: Booking System
+    description:
+      - Solved Double Booking Conflict.
+      - Utilized Pessimistic Locking, Increased system reliability and Performed automated booking checks in Python to check site functionality.
+    github: https://github.com/VaishnavSherla/Booking-System
+    demo_media: https://github.com/VaishnavSherla/Booking-System/blob/main/demo/demo.gif?raw=true
+    demo_media_type: gif
+    tech_stack:
+      - NodeJs
+      - ExpressJs
+      - PostgreSQL
+      - Python
+      - Javascript
+  
+  - name: Google Web Scraper
+    description:
+      - Enhanced data retrieval speed by 30% compared to previous methods.
+      - The repository has 20+ stars on GitHub.
+    github: https://github.com/VaishnavSherla/Google-Scraper
+    tech_stack:
+      - Python
+  
+  - name: TriCred - In Memory Prefix Search
+    description:
+      - Utilized Trie data structure for searching Credit Card Through it's Bins.
+    tech_stack:
+      - Python
+  
+  - name: Modi Music
+    description:
+      - Music Player Built using HTML5 API
+      - Contains collection of Modi AI Songs
+    github: https://github.com/VaishnavSherla/Modi-Music
+    live_link: https://vaishnavsherla.github.io/Modi-Music/
+    tech_stack:
+      - React
+  
+  - name: Movie Name Guesser
+    description:
+      - Hosted Backend on Always Data, It is used to retreive movie name with hints and info
+    github: https://github.com/VaishnavSherla/Movie-Guess
+    live_link: https://vaishnavsherla.github.io/Movie-Guess/
+    tech_stack:
+      - React
+      - NodeJs
+  
+  - name: Real-Time Chat
+    description:
+      - Designed real-time chat application enabling instant messaging among users with group support.
+      - Optimized Reads by using Column Wide Database, Utilized Redis to Scale the Socket.io Servers.
+    tech_stack:
+      - NodeJs
+      - Socket.IO
+      - ExpressJs
+      - HBase (Columnar DB)
+      - MongoDB
+      - Redis
