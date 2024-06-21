@@ -5,6 +5,7 @@ date: 2023-12-05 00:00:00 +0000
 tags: [flask]
 description: Welcome to the introduction to Flask basics by Vaishnav Sherla, covering key concepts like setup, creating a Flask application, and working with dynamic routes. Get started with Flask for web development!
 image: '/images/posts/flask.png'
+permalink: '/flask-basics/'
 ---
 
 ## What is Flask?

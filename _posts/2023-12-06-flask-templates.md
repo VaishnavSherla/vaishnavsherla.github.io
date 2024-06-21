@@ -4,6 +4,7 @@ title: Flask Templates
 date: 2023-12-06 00:00:00 +0000
 tags: [flask]
 description: Learn about Flask templates with Vaishnav Sherla. Explore the basics of using templates in Flask for web development.
+permalink: '/flask-templates/'
 ---
 
 ## Understanding Flask Templates
