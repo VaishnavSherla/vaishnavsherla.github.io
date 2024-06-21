@@ -1,7 +1,7 @@
 #-------------------------------
 # General Site Settings
 title: Vaishnav Sherla
-logo: 
+logo: '/images/portraits/head_circle.png'
 description: Meet Vaishnav, a Computer Science enthusiast skilled in Python, JavaScript, Golang, Flask, Django, and NodeJs. Passionate about backend engineering, concurrency, and computer science internals.
 domain: vaishnavsherla.github.io
 url: https://vaishnavsherla.github.io
