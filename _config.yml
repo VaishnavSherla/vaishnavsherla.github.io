@@ -73,6 +73,13 @@ defaults:
       path: '_pages'
     values:
       permalink: /:basename:output_ext
+  
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      permalink: /posts/:title/
 
 include:
   - _pages

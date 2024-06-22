@@ -4,7 +4,6 @@ title: Hello World
 date: 2023-12-03 11:00:00 +0000
 tags: [general]
 description: Welcome to the tech-centric blog by Vaishnav Sherla, a CSE student passionate about simplifying complex concepts. Dive into insightful articles on web technologies, ethical hacking, and other exciting tech topics. Join the journey as Vaishnav shares his understanding in straightforward terms. Follow for weekly updates on intriguing tech insights!
-permalink: '/hello-world/'
 ---
 Hello, and welcome to my very first blog post! I am Vaishnav, a student pursuing my BE in CSE at CBIT, Hyderabad.
 

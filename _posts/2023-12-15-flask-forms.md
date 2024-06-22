@@ -4,7 +4,6 @@ title: Forms in Flask
 date: 2023-12-17 00:00:00 +0000
 tags: [flask]
 description: Vaishnav Sherla explains the significance of forms in Flask. Explore the fundamental approach for handling form submission using Flask's request object for both GET and POST methods.
-permalink: '/flask-forms/'
 ---
 ## Why do we need forms?
 Forms act as a communication bridge between users and web applications. By allowing users to submit data, forms serve as a means of gathering information, performing validations, and providing feedback.
