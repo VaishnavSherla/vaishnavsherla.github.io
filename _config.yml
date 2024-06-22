@@ -60,6 +60,7 @@ plugins:
   - jekyll-sitemap
   - jekyll/tagging
   - jekyll-feed
+  - jekyll-toc
 
 kramdown:
   parse_block_html: true
@@ -80,6 +81,7 @@ defaults:
     values:
       layout: post
       permalink: /posts/:title/
+      toc: true
 
 include:
   - _pages

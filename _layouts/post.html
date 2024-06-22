@@ -60,7 +60,12 @@ layout: default
 <!-- begin post -->
 <div class="container">
   <article class="post animate">
-
+ <!-- Table of Contents -->
+ <h2 id="toggle" style="cursor: pointer;">Table of Contents</h2>
+  <aside id="toc" class="toc hidden">
+      
+    </aside>
+    
     <div class="post__content">
       {{ content }}
     </div>
@@ -103,3 +108,76 @@ layout: default
 {% include related-posts.html %}
 
 {% if site.disqus-identifier %} {% include disqus-comments.html %} {% endif %}
+
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const content = document.querySelector('.post__content');
+  const toc = document.getElementById('toc');
+
+  if (content && toc) {
+    const headings = content.querySelectorAll('h2, h3, h4');
+
+    if (headings.length > 0) {
+      const tocList = document.createElement('ul');
+
+      headings.forEach(function(heading) {
+        const id = heading.getAttribute('id');
+        if (id) {
+          const listItem = document.createElement('li');
+          const link = document.createElement('a');
+          link.href = `#${id}`;
+          link.textContent = heading.textContent;
+          listItem.appendChild(link);
+          
+          // Determine heading level and adjust indentation
+          const headingLevel = parseInt(heading.tagName.charAt(1));
+          listItem.style.paddingLeft = `${(headingLevel - 2) * 15}px`; // Adjust indent
+
+          tocList.appendChild(listItem);
+        }
+      });
+
+      toc.appendChild(tocList);
+    } else {
+      toc.innerHTML = '<p>No headings found.</p>';
+    }
+  }
+
+  const tocToggle = document.getElementById('toggle');
+
+  if (tocToggle) {
+    tocToggle.addEventListener('click', function() {
+      toc.classList.toggle('hidden');
+    });
+  }
+});
+
+</script>
+
+<style>
+
+#toc h2 {
+  cursor: pointer;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+#toc ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#toc ul li {
+  margin-bottom: 5px;
+}
+
+#toc ul li a:hover {
+  color: #007bff;
+}
+
+.hidden {
+  display: none;
+}
+
+</style>
